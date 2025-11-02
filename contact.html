@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #f6f8fb;
+      color: #111827;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .title {
+      color: #0b74de;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    nav a {
+      color: #6b7280;
+      text-decoration: none;
+      margin-left: 12px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #0b74de;
+    }
+    .card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    p {
+      color: #6b7280;
+    }
+    form {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #e6e9ef;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+    textarea { min-height: 120px; }
+    .btn {
+      background: #0b74de;
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .muted {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 16px; }
+      nav a { margin-left: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="title">My Web Project</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h1>Contact - This Project</h1>
+      <p>Here you can find contact information for this project.</p>
+
+      <form>
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Your email" />
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+
+      <p class="muted"><a href="index.html">Back to Home</a></p>
+    </main>
+  </div>
+</body>
+</html>

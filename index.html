@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        :root {
+            --bg: #f6f8fb;
+            --card: #ffffff;
+            --accent: #0b74de;
+            --muted: #6b7280;
+            --radius: 10px;
+            --max-width: 900px;
+        }
+
+        /* Basic reset */
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, var(--bg), #ffffff);
+            color: #111827;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.5;
+        }
+
+        .site-wrap {
+            max-width: var(--max-width);
+            margin: 32px auto;
+            padding: 24px;
+        }
+
+        header.site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .site-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        nav.site-nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 14px;
+            font-weight: 500;
+        }
+
+        nav.site-nav a:hover {
+            color: var(--accent)
+        }
+
+        main.card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 1.5rem
+        }
+
+        p {
+            color: var(--muted)
+        }
+
+        a.btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #ffffff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn_container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Contact form styles */
+        form {
+            display: grid;
+            gap: 10px
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #e6e9ef;
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        textarea {
+            min-height: 120px
+        }
+
+        .muted {
+            color: var(--muted);
+            font-size: 0.95rem
+        }
+
+        /* Responsive */
+        @media (max-width:640px) {
+            .site-wrap {
+                padding: 16px;
+                margin: 20px
+            }
+
+            nav.site-nav a {
+                margin-left: 10px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site-wrap">
+        <header class="site-header">
+            <a class="site-title" href="index.html">My Web Project</a>
+            <nav class="site-nav">
+            </nav>
+        </header>
+
+        <main class="card">
+            <h1>Welcome to My Web Project</h1>
+            <p>This is the home page. Below are the About and Contact buttons to navigate.</p>
+            <p class="btn_container">
+                <a class="btn" href="about.html">About</a>
+                <a class="btn" href="contact.html">Contact</a>
+            </p>
+        </main>
+    </div>
+</body>
+
+</html>
